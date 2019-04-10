@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    background-color: white;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    grid-gap: 0.1rem;
+    grid-template-rows: repeat(3, minmax(30rem, auto)) 15rem 25rem 30rem 25rem 60rem repeat(2, minmax(20rem, auto)) minmax(30rem, auto) 5rem;
+}
+
+.item {
+    background-color: white;
+    display: grid;
+}
+
+/* landing page */
+
+.item-1 {
+    background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/monocle/mo-00-teaser-high.jpg.asset.1553159665945.jpg);
+    background-size: 100%;
+    display: grid;
+}
+
+.item-2 {
+    color: white;
+    background-image: url(https://images.pexels.com/photos/1266761/pexels-photo-1266761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+}
+
+.item-2 .read-more {
+    border: 2px solid white;
+}
+
+.item-3 {
+    color: grey;
+    background-image: url(https://media.giphy.com/media/l3vR54qq0LfBpm0TK/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-3 .read-more {
+    border: 3px solid grey;
+}
+
+.placeholder {
+    align-self: end;
+    margin-left: 1rem;
+    height: 50%;
+}
+
+.read-more {
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, .01);
+    display: grid;
+    grid-template-columns: auto 1fr 1auto;
+    justify-content: center;
+    align-content: center;
+    height: 3rem;
+    width: 12rem;
+}
+
+.read-more h3 {
+    font-weight: bold;
+}
+
+/*subheader */
+
+.item-4 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+}
+
+.item-4 .placeholder {
+    display: grid;
+    justify-items: center;
+    height: auto;
+    margin-left: 2.5rem;
+}
+
+/*item with display grid and 4 sub-items*/
+
+.item-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.sub-item {
+    background-color: mistyrose;
+    display: grid;
+    align-items: end;
+}
+
+.item-5 {
+    background-image: url(https://cdn.pixabay.com/photo/2012/04/05/01/25/gift-25642_1280.png);
+    background-size: cover;
+}
+
+/*item with 6 sub-items*/
+
+.item-8 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/*show more button and subheader in 1 item*/
+
+.item-9 > *{
+    display: grid;
+    grid-gap: 2px;
+    background-color: white;
+}
+
+.show-more {
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, .01);
+    display: grid;
+    justify-content: center;
+}
+
+.show-more h3 {
+    font-weight: bold;
+}
+
+.big-subheader {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.sub-item-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+
+.item-10 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-template-rows: repeat(9, 35rem);
+}
+
+.social-item {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: 3rem minmax(15rem, auto) auto;
+    grid-gap: 1px;
+}
+
+.content {
+    background-color: white;
+}
+
+.social-item-main {
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/01/21/38/car-3055017_1280.jpg);
+    background-size: cover;
+}
+
+.social-item-footer {
+    display: grid;
+    grid-template-rows: 3rem 5rem auto;
+}
+
+.item-11 {
+    background-color: black;
+    color: white;
+    display: grid;
+}
+
+.language ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.item-12 {
+    background-color: black;
+    color: white;
+    display: grid;
+}
+
+.copyright {
+    align-self: center;
+    justify-self: center;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+@media (min-width: 600px) {
+
+    .wrapper {
+        display: grid;
+        background-color: white;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        grid-gap: 0.1rem;
+        grid-template-rows: repeat(3, minmax(30rem, auto)) 15rem 25rem 25rem 20rem 60rem repeat(1, minmax(20rem, auto)) 115rem minmax(30rem, auto) 5rem;
+    }
+
+
+    .item-1 {
+        height: 50rem;
+        display: grid;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .item-3 {
+        height: 70rem;
+        color: white;
+    }
+    .item-4 {
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+    }
+    .item-5 {
+        align-content: flex-start;
+        color: blue;
+    }
+
+    .placeholder {
+        color: green;
+        display: grid;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .item-7 {
+        justify-content: center;
+        justify-items: center;
+    }
+    .social-item {
+        width: 25rem;
+    }
+    .item-10 {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }  
+
+    .big-subheader {
+        display: grid;
+        justify-content: center;
+    }
+
+    .language {
+        display: flex;
+        justify-content: flex-start;
+        height: 40%;
+        border: 2px solid green;
+    }
+
+    .language ul {
+        border: 2px solid hotpink;
+        margin-left: 5rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        width: 25%;
+    }
+
+    .language ul li {
+        word-spacing: 2em;
+    }
+
+    .sublink-placeholder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: -5rem;
+    }
+}
