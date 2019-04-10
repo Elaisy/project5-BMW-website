@@ -117,7 +117,7 @@ html {
 
 /*show more button and subheader in 1 item*/
 
-.item-9 > *{
+.item-9>* {
     display: grid;
     grid-gap: 2px;
     background-color: white;
@@ -163,17 +163,40 @@ li {
 .social-item {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-rows: 3rem minmax(15rem, auto) auto;
+    grid-template-rows: 3rem minmax(5rem, auto) auto;
     grid-gap: 1px;
+}
+
+.social-item-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-social-item-header {
+    background-image: url(https://scontent-ams3-1.cdninstagram.com/vp/0260d0e60bfaa163a0af16f2c74b7e2f/5D49316A/t51.2885-19/s150x150/15048251_942878482515089_74728320666697728_a.jpg?_nc_ht=scontent-ams3-1.cdninstagram.com);    
+    background-size: -30% no-repeat;
+    background-position-y: 20%;
+    background-position-x: 22%;
+    
+}
+
+.social-item-main {
+    background-image: url(https://loremflickr.com/g/320/240/car,bmw,classic/all);
+    background-size: cover;
+}
+
+.placeholder-social-item-instagram {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.placeholder-social-item-instagram a {
+    display: grid;
+    align-items: center;
 }
 
 .content {
     background-color: white;
-}
-
-.social-item-main {
-    background-image: url(https://cdn.pixabay.com/photo/2018/01/01/21/38/car-3055017_1280.jpg);
-    background-size: cover;
 }
 
 .social-item-footer {
@@ -214,7 +237,7 @@ h3 {
         background-color: white;
         font-family: 'Helvetica', 'Arial', sans-serif;
         grid-gap: 0.1rem;
-        grid-template-rows: repeat(3, minmax(30rem, auto)) 15rem 25rem 25rem 20rem 60rem repeat(1, minmax(20rem, auto)) 115rem minmax(30rem, auto) 5rem;
+        grid-template-rows: repeat(3, minmax(30rem, auto)) 15rem 25rem 25rem 10rem 60rem repeat(1, minmax(20rem, auto)) 115rem minmax(30rem, auto) 5rem;
     }
 
 
@@ -224,40 +247,43 @@ h3 {
         justify-content: flex-start;
         align-content: flex-start;
     }
+
     .item-3 {
         height: 70rem;
         color: white;
     }
+
     .item-4 {
-        background-color: pink;
         display: flex;
         justify-content: center;
     }
+
     .item-5 {
         align-content: flex-start;
         color: blue;
     }
 
     .placeholder {
-        color: green;
         display: grid;
         justify-items: center;
         align-items: start;
     }
 
     .item-7 {
+        display: flex;
         justify-content: center;
-        justify-items: center;
     }
+
     .social-item {
         width: 25rem;
     }
+
     .item-10 {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-    }  
+    }
 
     .big-subheader {
         display: grid;
@@ -268,11 +294,9 @@ h3 {
         display: flex;
         justify-content: flex-start;
         height: 40%;
-        border: 2px solid green;
     }
 
     .language ul {
-        border: 2px solid hotpink;
         margin-left: 5rem;
         display: flex;
         justify-content: space-between;
