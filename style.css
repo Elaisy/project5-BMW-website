@@ -160,6 +160,8 @@ li {
     grid-template-rows: repeat(9, 35rem);
 }
 
+/* social item*/ 
+
 .social-item {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
     display: grid;
@@ -168,22 +170,60 @@ li {
 }
 
 .social-item-header {
+    border: 2px solid green;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
+    
 }
 
 .image-social-item-header {
-    background-image: url(https://scontent-ams3-1.cdninstagram.com/vp/0260d0e60bfaa163a0af16f2c74b7e2f/5D49316A/t51.2885-19/s150x150/15048251_942878482515089_74728320666697728_a.jpg?_nc_ht=scontent-ams3-1.cdninstagram.com);    
-    background-size: -30% no-repeat;
-    background-position-y: 20%;
-    background-position-x: 22%;
-    
+    border: 2px solid hotpink;
+    width: 33%;
+    display: grid;
+}
+
+.bmw-icon {
+    align-self: center;
+    justify-self: center;
+}
+
+.profile {
+    display: grid;
+    border: 2px solid yellow;
+}
+
+.button-profiel {
+    background-color: blue;
+    border-color: blue;
+    border-radius: 10%;
+    height: 50%;
+    width: 70%;
+    margin: auto;
+    margin-top: 0.4rem;
+}
+
+.button-profiel a {
+    color: white;
+    text-decoration: none;
+}
+
+.text-social-header {
+    display: grid;
+    border: 2px solid blue;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;    
+}
+
+.text-social-header h4, .text-social-header h5, .text-social-header .fa-certificate {
+    margin-top: 0.5rem;
 }
 
 .social-item-main {
     background-image: url(https://loremflickr.com/g/320/240/car,bmw,classic/all);
     background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
 .placeholder-social-item-instagram {
     display: grid;
@@ -200,8 +240,17 @@ li {
 }
 
 .social-item-footer {
+    background-color: grey;
     display: grid;
-    grid-template-rows: 3rem 5rem auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem auto 3rem 3rem auto;
+    grid-gap: 10px;
+}
+
+.placeholder-social-item-instagram h4 a {
+    border: 2px solid hotpink;
+    color: skyblue;
+    text-decoration: none;
 }
 
 .item-11 {
